@@ -179,3 +179,9 @@ This system helps doctors by:
 - Reducing interpretation time
 - Providing clearer visual information
 - Improving diagnostic accuracy
+
+---
+
+## 🌟 Novelty
+
+A novel, lightweight framework that uses **diffusion models** not for generation, but as multi-timestep, noise-robust feature extractors. These features are then intelligently merged using **transformer-based cross-modal attention**, achieving superior structural fidelity without the heavy computational cost of traditional diffusion pipelines.
