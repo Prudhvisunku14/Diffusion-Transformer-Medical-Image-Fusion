@@ -1,0 +1,16 @@
+# Ignore everything by default
+*
+
+# Except these files and directories
+!assets/
+!models/
+!data/
+!train_stage1.py
+!train_stage2.py
+!README.md
+!.gitignore
+
+# And everything inside the un-ignored directories
+!assets/**
+!models/**
+!data/**
