@@ -46,6 +46,9 @@ Traditional and deep learning methods suffer from:
 ### 📌 Stage 1: Diffusion Feature Learning
 
 ![Stage 1](assets/stage1.png)
+
+*Figure: The diffusion process extracting multi-scale feature representations from CT and MR images.*
+
 - Adds noise to CT and MR images
 - Uses **Diffusion UNet**
 - Learns multi-scale feature representations
@@ -55,19 +58,15 @@ Traditional and deep learning methods suffer from:
 
 ![Stage 2](assets/stage2.png)
 
+*Figure: The Transformer-based fusion head employing cross-modal attention mechanisms to intelligently merge features and synthesize the final image.*
+
 ---
 
 ## 🧪 Sample Results
 
-### 🔹 Input (CT & MR)
-| CT | MR |
-|----|----|
-| ![CT](assets/ct.png) | ![MR](assets/mr.png) |
+![Fused Collage](assets/fused_collage.png)
 
-### 🔹 Fused Output
-| Fused Image |
-|-------------|
-| ![Fused Output](assets/fused.png) |
+*The collage above clearly demonstrates the successful integration of dense bone structures from CT scans alongside the intricate soft tissue details from MRI, achieving high structural fidelity without blurring or artifacts.*
 
 ---
 
@@ -84,27 +83,13 @@ Traditional and deep learning methods suffer from:
 ## 📁 Project Structure
 
 ```text
-DiffTransFuse/
-├── DATASET/
-├── CT-MRI/
-├── Results/
-├── config/
-│   └── fusion_train.json
-├── data/
-│   └── paired_ct_mr_dataset.py
-├── models/
-│   ├── losses/
-│   ├── stage1/
-│   └── stage2/
-├── trained_models/
-├── utils/
-│   └── project_paths.py
-├── train_stage1.py
-├── train_stage2.py
-├── test.py
-├── ct_mri_fusion_inference.py
-├── fuse_user_data.py
-└── evaluation_metrics.py
+Diffusion-Transformer-Medical-Image-Fusion/
+ ├── assets/
+ ├── models/
+ ├── data/
+ ├── train_stage1.py
+ ├── train_stage2.py
+ └── README.md
 ```
 
 ---
@@ -194,18 +179,3 @@ This system helps doctors by:
 - Reducing interpretation time
 - Providing clearer visual information
 - Improving diagnostic accuracy
-
----
-
-## 📜 License
-MIT License
-
----
-
-## 🤝 Acknowledgements
-- Harvard Medical Dataset
-- Diffusion Models
-- Transformer Architecture
-
----
-⭐ **If you find this useful, give a star!**
