@@ -109,8 +109,8 @@ We use the Harvard CT-MR dataset:
 ## ⚙️ Installation
 
 ```bash
-git clone <your-repo-link>
-cd DiffTransFuse
+git clone https://github.com/Prudhvisunku14/Diffusion-Transformer-Medical-Image-Fusion.git
+cd Diffusion-Transformer-Medical-Image-Fusion
 pip install -r requirements.txt
 ```
 
